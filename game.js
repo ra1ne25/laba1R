@@ -3,30 +3,71 @@ const words = [
     { word: 'пример', description: 'Что-то, что служит образцом или моделью для подражания.' },
     { word: 'книга', description: 'Объект, состоящий из набора письменных, печатных или иллюстрированных листов бумаги, скрепленных между собой.' },
     { word: 'река', description: 'Естественный водный поток значительной протяженности, текущий в углубленном русле.' },
+    { word: 'ноутбук', description: 'Портативное компьютерное устройство с экраном и клавиатурой.' },
+    { word: 'солнце', description: 'Звезда в центре нашей солнечной системы, источник света и тепла для Земли.' },
+    { word: 'дерево', description: 'Большое растение с прочным древесным стволом, ветвящимися на определенной высоте от земли.' },
+    { word: 'музыка', description: 'Искусство звуков, организованных во времени, которые выражают эмоции и чувства.' },
+    { word: 'кофе', description: 'Напиток, приготовленный путем заваривания обжаренного и молотого семени кофейного дерева.' },
+    { word: 'интернет', description: 'Глобальная система связанной компьютерной сети, использующая набор протоколов для передачи данных.' },
+    { word: 'клавиатура', description: 'Панель клавиш, используемая для ввода данных в компьютер или другое устройство.' },
+    { word: 'луна', description: 'Единственный естественный спутник Земли, оказывающий влияние на приливы и отливы.' },
+    { word: 'космос', description: 'Бесконечное пространство, которое существует за пределами земной атмосферы.' },
+    { word: 'смартфон', description: 'Мобильное устройство, сочетающее функции телефона и компьютера.' },
+    { word: 'чай', description: 'Напиток, получаемый путем заливания кипятком листьев чайного куста.' },
+    { word: 'море', description: 'Большая соленая водная территория, чаще всего соединенная с океаном.' },
+    { word: 'лес', description: 'Большая территория, покрытая густым ростом деревьев и кустарников.' },
+    { word: 'песок', description: 'Мелкие частицы минералов или горных пород, чаще всего обнаруживаемые на пляжах и пустынях.' },
+    { word: 'офис', description: 'Место работы, где выполняются административные и управленческие функции компании.' },
+    { word: 'мост', description: 'Конструкция, позволяющая пересекать реки, долины, дороги или другие препятствия.' },
+    { word: 'поезд', description: 'Серия соединенных вагонов, передвигающихся по рельсам для перевозки пассажиров или грузов.' },
+    { word: 'снег', description: 'Атмосферные осадки в форме мелких слабоспаянных кристаллов льда.' },
+    { word: 'дождь', description: 'Водяные капли, падающие из облаков на землю.' },
+    { word: 'сыр', description: 'Продукт питания, получаемый в результате сгущения и последующего брожения молока.' },
+    { word: 'игра', description: 'Деятельность с определенными правилами, направленная на развлечение, обучение или упражнения.' },
+    { word: 'кино', description: 'Искусство создания и демонстрации движущихся изображений с помощью кинопроекции.' },
+    { word: 'цветок', description: 'Репродуктивная структура растения, часто характеризующаяся яркими цветами и ароматами.' },
+    { word: 'телефон', description: 'Устройство, используемое для голосовой связи на расстоянии.' },
+    { word: 'бумага', description: 'Материал, обычно используемый для письма или печати, изготовленный из волокон целлюлозы.' },
+    { word: 'шариковая ручка', description: 'Пишущий инструмент с вращающимся шариком в конце, подающим чернила на бумагу.' },
+    { word: 'телевизор', description: 'Электронное устройство для просмотра видео и аудио передач.' },
+    { word: 'машина', description: 'Механическое устройство, созданное для выполнения определенной работы или задач.' },
+    { word: 'город', description: 'Большое и сложно организованное населенное место со множеством зданий и инфраструктуры.' },
+    { word: 'часы', description: 'Устройство для измерения и отображения времени.' },
+    { word: 'картина', description: 'Изображение, созданное с помощью живописи, рисования, фотографии и других художественных техник.' },
+    { word: 'зеркало', description: 'Обработанная поверхность, способная отражать свет для формирования изображения объектов перед ней.' },
+    { word: 'праздник', description: 'Торжественное или значимое событие, часто связанное с отдыхом и весельем.' },
+    { word: 'учебник', description: 'Книга или другой ресурс, предназначенный для обучения определенному предмету или навыку.' },
+    { word: 'ветер', description: 'Перемещение воздуха от области высокого давления к области низкого давления.' },
+    { word: 'врач', description: 'Специалист здравоохранения, обученный диагностировать и лечить болезни и травмы.' },
+    { word: 'ресторан', description: 'Место, где люди платят за то, чтобы сесть и поесть приготовленные блюда.' },
+    { word: 'школа', description: 'Учреждение, где преподают и учатся, особенно дети и подростки.' },
+    { word: 'карта', description: 'Масштабное графическое представление или модель поверхности Земли или ее части.' },
+    { word: 'планета', description: 'Небесное тело, вращающееся вокруг звезды или остатка звезды.' },
+    { word: 'пиво', description: 'Алкогольный напиток, обычно изготавливаемый путем брожения солода с добавлением хмеля.' }
     // Дополнительные слова и описания
-  ];
-  
-  let currentWordIndex;
-  let selectedLetters = '';
-  let totalScore = 0; // переменная для хранения счета
-  
-  // Обновление счета
+];
+
+let currentWordIndex;
+let selectedLetters = '';
+let totalScore = 0; // переменная для хранения счета
+
+// Обновление счета
 // Обновление и сохранение счета
 function updateScore(points) {
     totalScore += points;
     document.getElementById('totalScore').innerText = totalScore;
     saveScore(); // Сохраняем обновленный счет
 }
-  
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('back').addEventListener('click', function() {
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('back').addEventListener('click', function () {
         window.location.href = 'index.html'; // Переход на главную страницу
     });
 });
 
 
-  // Инициализация игры
-  function initializeGame() {
+// Инициализация игры
+function initializeGame() {
     // Сброс предыдущего слова
     selectedLetters = '';
 
@@ -35,38 +76,38 @@ document.addEventListener('DOMContentLoaded', function() {
         totalScore = parseInt(savedScore);
         document.getElementById('totalScore').innerText = totalScore;
     }
-  
+
     // Чтение номера раунда из localStorage и преобразование его в число
     const roundNumber = parseInt(localStorage.getItem('selectedRound'), 10);
-  
+
     // Проверка на наличие номера раунда и его корректность
     if (isNaN(roundNumber) || roundNumber < 1 || roundNumber > words.length) {
         console.error('Invalid round number.');
         // Здесь мог бы быть код для обработки ошибки или показа сообщения пользователю 
         return;
     }
-  
+
     // Настройка текущего индекса слова на основе номера раунда (номера раундов начинаются с 1)
     currentWordIndex = roundNumber - 1;
     const currentWord = words[currentWordIndex].word;
     const currentDescription = words[currentWordIndex].description;
-  
+
     // Отображение описания слова
     document.getElementById('description').innerText = currentDescription;
-  
+
     // Очистка предыдущих слотов для слов
     const wordSlots = document.getElementById('wordSlots');
     wordSlots.innerHTML = '';
-  
+
     // Создание и отображение пустых слотов для нового слова
     for (let i = 0; i < currentWord.length; i++) {
         wordSlots.innerHTML += '<span class="blank">_</span>';
     }
-  
+
     // Отображение букв для выбора из текущего слова
     const lettersContainer = document.getElementById('letters');
     lettersContainer.innerHTML = '';
-  
+
     // Перемешивание букв слова
     let letters = shuffleLetters(currentWord);
     letters.forEach(letter => {
@@ -80,9 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 }
 
-  
 
-  function startGame() {
+
+function startGame() {
     // Вы можете добавить здесь логику для показа страницы с выбором раундов.
     // Предположим, что у нас есть 5 раундов для выбора.
     let roundSelectionHTML = '<h2>Выберите раунд:</h2>';
@@ -103,17 +144,17 @@ function startRound(roundNumber) {
 }
 
 
-  // Перемешивание букв слова
-  function shuffleLetters(word) {
-      let lettersArray = word.split('');
-      for (let i = lettersArray.length - 1; i > 0; i--) {
-          let j = Math.floor(Math.random() * (i + 1));
-          [lettersArray[i], lettersArray[j]] = [lettersArray[j], lettersArray[i]];
-      }
-      return lettersArray;
-  }
-  
-  // Выбор буквы
+// Перемешивание букв слова
+function shuffleLetters(word) {
+    let lettersArray = word.split('');
+    for (let i = lettersArray.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [lettersArray[i], lettersArray[j]] = [lettersArray[j], lettersArray[i]];
+    }
+    return lettersArray;
+}
+
+// Выбор буквы
 // Выбор буквы
 function selectLetter(letter, button) {
     const currentWord = words[currentWordIndex].word;
@@ -133,15 +174,15 @@ function selectLetter(letter, button) {
         checkWord();
     }
 }
-  
-  // Обновление состояния слотов для букв
-  function updateSlots() {
+
+// Обновление состояния слотов для букв
+function updateSlots() {
     const slots = document.getElementById('wordSlots').children;
     for (let i = 0; i < slots.length; i++) {
         if (selectedLetters[i]) {
             slots[i].innerText = selectedLetters[i];
             slots[i].style.cursor = 'pointer'; // Стиль курсора для подсказки кликабельности
-            slots[i].onclick = function() {
+            slots[i].onclick = function () {
                 removeLetter(i); // Удаление буквы по индексу
             };
         } else {
@@ -162,7 +203,7 @@ function removeLetter(index) {
 
     // Возвращаем букву в массив доступных для выбора букв
     selectedLetters = selectedLetters.substring(0, index) + selectedLetters.substring(index + 1);
-    
+
     // Теперь устанавливаем слот, из которого была удалена буква, в состояние "_"
     slots[index].innerText = "_";
 
@@ -179,7 +220,7 @@ function removeLetter(index) {
     updateSlots();
 }
 
-  // Проверка слова
+// Проверка слова
 // Проверка слова и переход к следующему раунду
 function checkWord() {
     if (selectedLetters === words[currentWordIndex].word) {
@@ -188,7 +229,7 @@ function checkWord() {
 
         // Устанавливаем и сохраняем номер следующего раунда
         const nextRoundNumber = currentWordIndex + 2; // "+ 2" потому что массив начинается с 0, а раунды с 1
-        localStorage.setItem('selectedRound', String(nextRoundNumber)); 
+        localStorage.setItem('selectedRound', String(nextRoundNumber));
 
         // Проверяем, что следующий раунд не выходит за границы массива
         if (nextRoundNumber <= words.length) {
@@ -225,9 +266,9 @@ function useHint() {
 // Сохранить счет в localStorage
 function saveScore() {
     localStorage.setItem('totalScore', totalScore);
-  }
+}
 
-  
-  
-  // Запуск игры при полной загрузке страницы
-  window.onload = initializeGame;
+
+
+// Запуск игры при полной загрузке страницы
+window.onload = initializeGame;
