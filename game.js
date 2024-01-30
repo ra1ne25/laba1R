@@ -18,6 +18,13 @@ function updateScore(points) {
     saveScore(); // Сохраняем обновленный счет
 }
   
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('back').addEventListener('click', function() {
+        window.location.href = 'index.html'; // Переход на главную страницу
+    });
+});
+
+
   // Инициализация игры
   function initializeGame() {
     // Сброс предыдущего слова
